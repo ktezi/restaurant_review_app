@@ -1,6 +1,7 @@
 /**
  * Common database helper functions.
  */
+window.BASE_URL = 'https://ktezi.github.io/restaurant-review-app'
 class DBHelper {
 
   /**
@@ -9,8 +10,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8000 // Change this to your server port
-    const host = 'https://ktezi.github.io/restaurant_review_app' //for git hub //
-    return `${host}/data/restaurants.json`;
+    return `${BASE_URL}/data/restaurants.json`;
   }
 
   /**
@@ -144,14 +144,14 @@ class DBHelper {
    * Restaurant page URL.
    */
   static urlForRestaurant(restaurant) {
-    return (`./restaurant.html?id=${restaurant.id}`);
+    return (`${BASE_URL}/restaurant.html?id=${restaurant.id}`);
   }
 
   /**
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    return (`${BASE_URL}/img/${restaurant.photograph}`);
   }
 
   /**
