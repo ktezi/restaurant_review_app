@@ -1,7 +1,7 @@
 /**
  * Common database helper functions.
  */
-window.BASE_URL = 'https://ktezi.github.io/restaurant-review-app'
+window.BASE_URL = 'https://ktezi.github.io/restaurant_review_app'
 class DBHelper {
 
   /**
